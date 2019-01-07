@@ -1,4 +1,7 @@
 # terraform-aws-lambda-scheduler
+
+## Original work from neillturner
+
 Stop and start EC2 and RDS instances according to schedule via lambda and terraform.
 
 # Overview
@@ -33,8 +36,8 @@ This module depends on a correctly configured [AWS Provider](https://www.terrafo
 
 ```
 module "lambda-scheduler" {
-  source = "neillturner/lambda-scheduler/aws"
-  version = "0.2.0"
+  source = "nutellinoit/lambda-scheduler/aws"
+  version = "0.0.1"
   schedule_expression = "cron(5 * * * ? *)"
   tag = "schedule"
   schedule_tag_force = "true"
