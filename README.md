@@ -16,7 +16,7 @@ A schedule tag for an EC2 instance is json and looks like:
 
 On a RDS instance the schedule tag is a string of keyword parameters separated by a space.
 ```
-"mon_start=7 mon_stop=20 tue_start=7 tue_stop=20 wed_start=7 wed_stop=20 thu_start=7 thu_stop=20 fri_start=7 fri_stop=20"
+"mon_start=07 mon_stop=20 tue_start=07 tue_stop=20 wed_start=07 wed_stop=20 thu_start=07 thu_stop=20 fri_start=07 fri_stop=20"
 ```
 NOTE: This is because of restrictions in the characters the tags on RDS instance support.
 
@@ -70,7 +70,7 @@ The default schedule tag containing json schedule information to add to EC2 or R
 
 NOTE: On a RDS instance the tag is converted to a string of keyword parameters separated by a space.  i.e.
 ```
-"mon_start=7 mon_stop=20"
+"mon_start=07 mon_stop=20"
 ```
 because of restrictions in the characters the tags on RDS instance support.
 
